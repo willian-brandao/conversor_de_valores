@@ -6,7 +6,7 @@ import numpy as np
 def decimal_para_octal(numero):
     
     num = []
-    a = ''
+    array = ''
     cont = 0
     while numero > 0:
         num.append(numero % 8)
@@ -14,6 +14,6 @@ def decimal_para_octal(numero):
         cont += 1
         
     for i in range( cont -1, -1, -1):
-        a += str(num[i])
-    return a
+        array += str(num[i])
+    return array
 
